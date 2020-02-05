@@ -1,0 +1,33 @@
+===
+About software versions
+===
+I used standard installed version of Anaconda and Matlab 2016
+Standard Anaconda allows to use Python 2.7, 3.5 and 3.6
+Matlab 2016 can be connected with Python 2.7 and Python 3.4
+That’s why I chose Python 2.7 for this tutorial, but this version is quite old and I will look for the easiest way to use Python 3.x
+
+===
+First steps
+===
+•	Create new environment in Anaconda with Python 2.7 (easiest way is to do it from Anaconda Navigator)
+•	Install jupyter library (easiest way is to do it from Anaconda Navigator)
+•	Install matlab engine
+
+===
+matlab engine installation
+===
+To connect Matlab to Python one has to install matlab engine (this requires launching Anaconda as Administrator and then launching Terminal in environment) 
+Run next commands:
+
+cd “C:\Program Files (x86)\MATLAB\R2016a\extern\engines\python”
+python setup.py install
+
+===
+Optional, using Matlab in Jupyter:
+===
+Installation of matlab-kernel for Jupyter is required to run Matlab in Jupyter(this requires launching Anaconda as Administrator and then launching Terminal in environment)
+Run next commands:
+
+pip install matlab_kernel
+python -m matlab_kernel install
+jupyter kernelspec list
